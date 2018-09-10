@@ -1,0 +1,269 @@
+* {
+    margin:  0;
+    padding: 0;
+}
+
+body {
+max-width: 100%;
+background-image: 
+/* header background */
+url('data:image/svg+xml;utf8,<svg width="100%" height="200" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h1440v200H0z" fill="#33DABA" fill-rule="evenodd"/></svg>'),
+/* footer background */
+url('data:image/svg+xml;utf8,<svg width="100%" height="106" xmlns="http://www.w3.org/2000/svg"><path d="M.5.5h1451v105H.5z" fill="#858484" stroke="#FFF" fill-rule="evenodd"/></svg>');
+
+background-position:
+center top,
+center bottom;
+background-repeat:
+no-repeat,
+no-repeat;
+/*
+background-color: #FBF8F8;
+*/
+/* font style */
+/* font-family: Helvetica; */
+font-family: helvetica neue,arial,helvetica,freesans,liberation sans,numbus sans l,sans-serif;
+font-weight: 300;
+color: #FBF8F8;
+line-height 2em;
+}
+
+main {
+    position: abolute;
+    margin: 0 auto;
+    max-width: 960px;
+    overflow: auto;
+    /* grid */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 200px 50px 512px 2px  512px 2px 512px 200px;
+    grid-column-gap: 20px;
+}
+
+header {
+/* Parent */
+grid-column: 1/13;
+gird-row: 1/-1;
+
+/* Children */
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+grid-template-rows: 1fr 1fr 1fr;
+
+/* font */
+/*
+font-family: Helvetica;
+font-size: 14px;
+*/
+}
+
+header a {
+    color: #FBF8F8;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #ADADAD;
+}
+
+.logo {    
+grid-column: 1/2;
+grid-row: 2/3;
+align-self: center;
+/*
+width: 50px;
+height: 200px;
+*/
+}
+
+h1 {
+
+    font-family: helvetica neue,arial,helvetica,freesans,liberation sans,
+                 numbus sans l,sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    grid-column: 2/7;
+    grid-row: 2/3;
+/*    align-self: center; */
+    position: relative;
+    top: 22px;
+    left: -30px;
+}
+
+nav {
+    grid-column: 7/13;
+    grid-row: 3/4;
+    align-self: end;
+    justify-self: end;
+    display: block;
+    float: left;
+}
+
+nav a {
+    padding-left: 5px;
+    /* SERVICES: */
+    font-family: Helvetica;
+    font-size: 13px;
+    text-align: center;
+
+    /*
+padding-right: 2px;
+padding-left: 2px;
+*/
+text-decoration: none;
+}
+
+nav a:hover {
+color: #ADADAD;
+}
+
+.header_top_left {
+    grid-column: 11/13;
+    grid-row: 1;
+    justify-self: end;
+    align-self: center;
+}
+
+h2 {
+    margin-bottom: 12px;
+    font-family: helvetica neue,arial,helvetica,freesans,liberation sans,
+             numbus sans l,sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    color: #2e3b4e;
+}
+
+.intro svg {
+    grid-column: 2/7;
+    align-self: center;
+    justify-self: center;
+}
+
+.intro div {
+    grid-column: 7/12;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    font-family: helvetica neue,arial,helvetica,freesans,liberation sans,
+                 numbus sans l,sans-serif;
+    font-weight: 300;
+
+}
+
+section div ul {
+     list-style: none;
+}
+
+.s1 {
+    grid-column: 1/13;
+    grid-row: 3;
+    /*
+    width: 50px;
+    height: 50px;
+    */
+    background: #FAF8F8;
+    /* position: relative; */
+    /*
+    -moz-border-radius:    4px;
+    -webkit-border-radius: 4px;
+    */
+    border-radius: 7px; 
+}
+
+.s1 p {
+    text-align: left;
+}
+
+.s1 ul {
+margin-top: 10px;
+}
+
+.s1 ul li {
+padding: 2px;
+}
+
+.s2 {
+    grid-column: 1/13;
+    grid-row: 5;
+    background: #FAF8F8;
+    border-radius: 7px; 
+}
+
+.s3 {
+    grid-column: 1/13;
+    grid-row: 7;
+    background: #FAF8F8;
+    border-radius: 7px;
+}
+
+.s4 {
+    grid-column: 1/9;
+    grid-row: 8;
+/*    align-self: center; */
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+grid-column: 1/13;
+grid-row: 12/13;
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+grid-template-rows: 106px;
+}
+
+.icns {
+
+    grid-column: 12/13;
+    grid-row: 1;
+    align-self: center;
+    justify-self: end;
+    /*
+    display: block;
+    float: right;
+*/
+}
+
+.s4 p{
+    flex: 2;
+/*    height: 50px; */
+    align-self: center;
+    text-align: left;
+    font-weight: 330;
+    color: #2e3b4e;
+}
+
+.s4 svg {
+    flex: 1;
+    margin-right: 0;
+    justify-self: flex-end;
+    align-self: center;
+}
+
+footer a {
+    padding-left: 7px;
+    padding-right 7px;
+}
+
+icns:hover {
+    color: grey;
+}
+
+footer p {
+    grid-column: 1/3;
+}
+
+.align-c {
+    align-self: center;
+}
+
+.justify-l {
+    justify-self: start;
+    
+}

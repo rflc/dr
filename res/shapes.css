@@ -1,0 +1,9 @@
+.divy {
+    width: 120px;
+       height: 80px;
+          background: grey;
+	     position: relative;
+	        -moz-border-radius:    10px;
+		   -webkit-border-radius: 10px;
+		      border-radius:         10px;
+}
