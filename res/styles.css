@@ -36,7 +36,7 @@ main {
     /* grid */
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 200px 50px 512px 2px  512px 2px 512px 200px;
+    grid-template-rows: 200px 50px 412px 2px  412px 2px 412px 200px;
     grid-column-gap: 20px;
 }
 

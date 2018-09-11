@@ -57,5 +57,5 @@ function tiktok(){
 }
 else {
 // window width is less than 500px
-    alert("Hello there");
+    alert("Please view on desktop");
 }
