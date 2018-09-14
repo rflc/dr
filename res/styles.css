@@ -7,7 +7,10 @@ body {
 max-width: 100%;
 background-image: 
 /* header background */
-url('data:image/svg+xml;utf8,<svg width="100%" height="200" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h1440v200H0z" fill="#33DABA" fill-rule="evenodd"/></svg>'),
+/*
+url('data:image/svg+xml;utf8,<svg width="100%" height="200" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h1440v200H0z" fill="#33DABA" fill-rule="evenodd"/></svg>'),*/
+url('img/hero.png'),
+
 /* footer background */
 url('data:image/svg+xml;utf8,<svg width="100%" height="106" xmlns="http://www.w3.org/2000/svg"><path d="M.5.5h1451v105H.5z" fill="#858484" stroke="#FFF" fill-rule="evenodd"/></svg>');
 
@@ -17,6 +20,7 @@ center bottom;
 background-repeat:
 no-repeat,
 no-repeat;
+background-attachment: fixed, scroll;
 /*
 background-color: #FBF8F8;
 */
